@@ -1,0 +1,35 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/valk/CallofDuty/InfiniteWarfare/characters/E3N/hero_eth3n_glass_d"
+	"$bumpmap" "models/valk/CallofDuty/InfiniteWarfare/characters/E3N/hero_eth3n_glass_n"
+	"$additive" "1"
+
+
+	"$phong" "1"
+	"$phongboost" "12"
+	"$phongexponent" "10"
+	"$phongalbedotint" "1"
+	"$phongfresnelranges" "[3 5 7]"	
+	"$phongexponenttexture" "models/valk/shared/phongexp255"
+	"$lightwarptexture" "models/valk/shared/lightwarp_metallic"
+	"$phongdisablehalflambert" "1.00"
+
+	"$envmap"			"models\valk\shared\cubemap_fallout4_visor"
+	"$normalmapalphaenvmapmask" "1"
+	"$cubemaptint" "[0 0 1]"
+	"$cubemappower"	"1"
+	"$cubemapmin"	"0"
+	"$cubemapmax"	"1"
+	"$cubemapldrmul"	"1"
+	"$cubemaphdrmul"	".5"
+
+	Proxies
+	{
+		drc_ReflectionTint
+		{
+			resultVar $envmaptint
+		}
+	}
+
+
+}

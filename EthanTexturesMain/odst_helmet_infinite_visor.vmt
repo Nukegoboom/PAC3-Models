@@ -1,0 +1,50 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/valk/HaloCustomEdition/unsc/characters/ODST_Nightfall/ODST_Helmet_Infinite_d"
+	"$bumpmap" "models/valk/HaloCustomEdition/unsc/characters/ODST_Nightfall/ODST_Helmet_Infinite_n"
+	"$ambientocclusion" "1"
+
+	"$phong" "1"
+	"$phongboost" "6"
+	"$phongexponent" "3"
+	"$phongalbedotint" "1"
+	"$phongfresnelranges" "[3 5 7]"	
+	"$phongexponenttexture" "models/valk/shared/phongexp255"
+	"$lightwarptexture" "models/valk/shared/lightwarp_metallic"
+	"$phongdisablehalflambert" "1.00"
+
+	"$detail" "models/valk/shared/detail_metal"
+	"$detailblendmode" "0"
+	"$detailblendfactor" ".2"
+	"$detailscale" "60"
+
+	"$envmap"			"models\valk\shared\cubemap_fallout4_visor"
+	"$normalmapalphaenvmapmask" "1"
+	"$cubemappower"	"5"
+	"$cubemapmin"	"0"
+	"$cubemapmax"	"1"
+	"$cubemapldrmul"	"1"
+	"$cubemaphdrmul"	".5"
+
+
+
+	Proxies
+	{
+		drc_ReflectionTint_EyeColour
+		{
+			resultVar $envmaptint
+		}
+		drc_EyeColour
+		{
+			resultVar		$color2 // pass the player color value to Gmod
+			default		0.23 0.35 0.41 // unused for now.
+		}
+		Clamp // clamp the chosen color between 1% and 125% (usually)
+		{
+			min 0
+			max 1
+			srcVar1 "$color2"
+			resultVar "$color2"
+		}
+	}
+}

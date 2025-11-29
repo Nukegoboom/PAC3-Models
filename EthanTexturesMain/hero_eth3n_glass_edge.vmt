@@ -1,0 +1,16 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/valk/CallofDuty/InfiniteWarfare/characters/E3N/hero_eth3n_glass_d"
+	"$bumpmap" "models/valk/CallofDuty/InfiniteWarfare/characters/E3N/hero_eth3n_glass_n"
+	"$ambientocclusion" "1"
+
+	"$phong" "1"
+	"$phongboost" "6"
+	"$phongexponent" "10"
+	"$phongalbedotint" "1"
+	"$phongfresnelranges" "[3 5 7]"	
+	"$phongexponenttexture" "models/valk/shared/phongexp255"
+	"$lightwarptexture" "models/valk/shared/lightwarp_metallic"
+	"$phongdisablehalflambert" "1.00"
+
+}
